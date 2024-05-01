@@ -1,0 +1,233 @@
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:ital,wght@1,300&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family:"Quicksand",sans-serif ;
+}
+.container {
+  margin: auto;
+}
+a{
+	text-decoration: none;
+}
+@media (max-width:800px){
+	.contain .style-table{
+		width: 100%;
+		font-size: 16px;
+	}
+}
+#category{
+	height: 150vh;
+	background-color: beige;
+}
+#category .cat h1{
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 20px 20px;
+}
+
+ #category .cat-img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#category .cat-img img{
+	opacity: .7;
+}
+
+#category .cat-img img:hover{
+	opacity: 1;
+}
+#category .cat-name{
+display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	text-align: center;
+	margin-left: 10px;
+}
+
+#category a{
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 10px 10px;
+}
+
+#category a:hover{
+	color: black;
+}
+.printbtn{
+background-color: yellowgreen;
+font-size: 20px;
+font-weight: 700;
+text-transform: capitalize;
+opacity: .8;
+width: 50%;
+margin:10px 20px;
+text-align: center;
+border-radius: 15px ;
+}
+.printbtn:hover{
+	opacity: 1;
+}
+
+/*data base table*/
+@media screen(orientation:landscape){
+.style-table{
+	width: 600px;
+	height: 50vh;
+}
+.contain .style-table .t-heading{
+	font-size: 15px;
+}
+.print{
+	margin-top: 150px;
+	margin-left: 150px;
+}
+
+}
+@media print{
+	 .printbtn{
+		display: none;
+	}
+	form{
+		display: none;
+	}
+
+}
+.contain .searchbtn{
+	height: 50px;
+	margin-right: 50px;
+	border-radius: 5px;
+	font-size: 25px;
+	font-weight: 500;
+	width: 100px;
+	background-color: beige;
+}
+.form-control{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 50px;
+}
+@media (max-width:800px){
+	.contain{
+		width: 100%;
+	}
+	.contain .header h2{
+		font-size:25px ;
+		margin-left: 30px ;
+		padding: 15px 20px;
+	}
+	.style-table{
+		margin: 10px;
+		width: 50%;
+	}
+	.contain .style-table .t-heading{
+		display :none
+	}
+	.style-table tr.active-row,
+.style-table td.active-row{
+	display: block;
+	width:400px;
+
+}
+.style-table.active{
+	background-color: yellowgreen;
+}
+.style-table tr.active-row{
+	margin-bottom: 15px;
+}
+.style-table td.active-row{
+	text-align: right;
+	padding-left: 50%;
+	position: relative;
+}
+.style-table td.active-row:before {
+	content: attr(data-label);
+	position: absolute;
+	left: 0;
+	width: 50%;
+	padding-left: 15px;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: left;
+	text-transform: capitalize;
+	line-height: 2.5px;
+
+}
+}
+.contain{ 
+	height: 100vh;
+	background-color: beige;
+     margin: auto;
+
+}
+
+.contain h2
+{
+	font-size: 30px;
+	padding: 15px 10px;
+	margin-left: 400px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.contain .style-table{
+	padding: 10px  15px;
+	border-collapse: collapse;
+	margin-left: 30px;
+    font-size: 20px;
+    width:100%;
+    font-weight: 400;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    opacity: .8;
+    background-color: whitesmoke ;
+
+}
+.contain .style-table:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+opacity: 1;
+}
+.contain .style-table td{
+	padding: 12px 12px;
+	border-right: 2px double darkgrey;
+border-left: 2px double darkgrey;
+border-top: 2px solid darkgrey;
+border-bottom: 5px solid  #009879;
+
+}
+.contain .style-table .t-heading{
+color: #009879;
+background:rgb(186, 221, 183);
+padding: 10px 10px;
+margin-left: 30px;
+border-right: 2px double darkgrey;
+border-left: 2px double darkgrey;
+border-top: 2px solid darkgrey;
+border-bottom: 2px solid  #009879;
+text-transform: capitalize;
+    font-size:25px;
+}
+
+.style-table tr.active-row,
+.style-table td.active-row
+{
+	font-size:15px;
+    font-weight:300;
+    color:black;
+   border-bottom: 2px double darkgrey;
+   border-right: 2px double darkgrey;
+   border-left: 2px double darkgrey;
+
+
+
+}
